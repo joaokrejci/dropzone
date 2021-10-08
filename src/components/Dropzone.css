@@ -1,0 +1,57 @@
+.Dropzone {
+    margin: 20px auto;
+    border: 1px solid rgba(0,0,0,0.2);
+    width: 800px;
+    height: 500px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 4px;
+}
+
+.Dropzone.hovering {
+    opacity: 0.6;
+}
+
+.Dropzone .hiddenInput {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+}
+
+.Dropzone-Bundles {
+    width: 800px;
+    height: 400px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.Dropzone-ListItem {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.Dropzone-ListItem-FileName {
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    margin: 0 10px;
+}
+
+.Dropzone-SubmitButton button {
+    background: #27f;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 10px 50px;
+}
